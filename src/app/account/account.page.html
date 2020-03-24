@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>account</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content
+  [scrollEvents]="true"
+  (ionScrollStart)="logScrollStart()"
+  (ionScroll)="logScrolling($event)"
+  (ionScrollEnd)="logScrollEnd()">
+    
+
+    <div slot="fixed">
+      <h1>My Profile</h1>
+      <h1>Messages</h1>
+      <h1>Calendar</h1>
+      <h1>Whats on</h1>
+      <h1>Our story</h1>
+      <h1>Blog</h1>
+      <h1>Contact us</h1>
+      <h1>Sign out</h1>
+    </div>
+</ion-content>

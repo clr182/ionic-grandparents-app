@@ -1,0 +1,75 @@
+
+  <ion-router-outlet id="menu"></ion-router-outlet>
+
+<ion-header>
+  <ion-toolbar>
+  </ion-toolbar>
+</ion-header>
+
+    
+    <super-tabs>
+      <super-tabs-toolbar slot="top" color="primary">
+        <super-tab-button tab="schedule">
+          <ion-icon name="calendar" color="light"></ion-icon>
+          <ion-label>Schedule</ion-label>
+        </super-tab-button>
+
+        <super-tab-button tab="alerts">
+          <ion-icon name="alarm-outline"></ion-icon>
+          <ion-label>Alerts</ion-label>
+        </super-tab-button>
+
+        <super-tab-button tab="search">
+          <ion-icon name="search-outline"></ion-icon>
+          <ion-label>Search</ion-label>
+        </super-tab-button>
+
+        <super-tab-button tab="live">
+          <ion-icon name="flash-outline"></ion-icon>
+          <ion-label>Live</ion-label>
+        </super-tab-button>
+
+        <super-tab-button tab="account">
+          <ion-icon name="body-outline"></ion-icon>
+          <ion-label>Account</ion-label>
+        </super-tab-button>
+      </super-tabs-toolbar>
+
+      <super-tabs-container>
+        <super-tab>
+          <ion-content>
+            <ion-nav [root]="calenderPage"></ion-nav>
+          </ion-content>
+        </super-tab>
+
+        <super-tab>
+          <ion-content>
+            <ion-nav [root]="alertPage"></ion-nav>
+          </ion-content>
+        </super-tab>
+
+        <super-tab>
+          <ion-content>
+            <ion-nav [root]="searchPage"></ion-nav>
+          </ion-content>
+        </super-tab>
+
+        <super-tab>
+          <ion-content>
+            <ion-nav [root]="livePage"></ion-nav>
+          </ion-content>
+        </super-tab>
+
+        <super-tab>
+          <ion-content>
+            <ion-nav [root]="accountPage"></ion-nav>
+          </ion-content>
+        </super-tab>
+      </super-tabs-container>
+
+
+
+  </super-tabs>
+
+
+

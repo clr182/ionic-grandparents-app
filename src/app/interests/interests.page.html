@@ -1,0 +1,124 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title><Strong>What are you interested in?</Strong></ion-title>
+    <p >
+      Choose some topics to get going
+    </p>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+<ion-grid>
+
+<ion-row>
+  <ion-col offset-4>
+    <ion-item>
+      <ion-label>Yoga</ion-label>
+      <ion-toggle [(ngModel)]="Yoga"></ion-toggle>
+    </ion-item>
+  </ion-col>
+  
+  <ion-col>
+    <ion-item>
+      <ion-label>Mass</ion-label>
+      <ion-toggle [(ngModel)]="Mass"></ion-toggle>
+    </ion-item>
+  </ion-col>
+</ion-row>
+
+<ion-row>
+  <ion-col offset-4>
+    <ion-item>
+      <ion-label>Live music</ion-label>
+      <ion-toggle [(ngModel)]="LiveMusic"></ion-toggle>
+    </ion-item>
+  </ion-col>
+
+  <ion-col>
+    <ion-item>
+      <ion-label>Knitting</ion-label>
+      <ion-toggle [(ngModel)]="Knitting"></ion-toggle>
+    </ion-item>
+  </ion-col>
+</ion-row>
+  
+<ion-row>
+  <ion-col offset-4>
+    <ion-item>
+      <ion-label>Theatre</ion-label>
+      <ion-toggle [(ngModel)]="Theatre"></ion-toggle>
+    </ion-item>
+  </ion-col>
+
+  <ion-col>
+    <ion-item>
+      <ion-label>Fitness</ion-label>
+      <ion-toggle [(ngModel)]="Fitness"></ion-toggle>
+    </ion-item>
+  </ion-col>
+</ion-row>
+
+<ion-row>
+  <ion-col offset-4>
+    <ion-item>
+      <ion-label>Bingo</ion-label>
+      <ion-toggle [(ngModel)]="Bingo"></ion-toggle>
+    </ion-item>
+  </ion-col>
+
+  <ion-col>
+    <ion-item>
+      <ion-label>Cooking</ion-label>
+      <ion-toggle [(ngModel)]="Cooking"></ion-toggle>
+    </ion-item>
+  </ion-col>
+</ion-row>
+  
+<ion-row>
+  <ion-col offset-4>
+    <ion-item>
+      <ion-label>Bookclub</ion-label>
+      <ion-toggle [(ngModel)]="BookClub"></ion-toggle>
+    </ion-item>
+  </ion-col>
+
+  <ion-col>
+    <ion-item>
+      <ion-label>Sports</ion-label>
+      <ion-toggle [(ngModel)]="Sports"></ion-toggle>
+    </ion-item>
+  </ion-col>
+</ion-row>
+  
+<ion-row>
+  <ion-col offset-4>
+    <ion-item>
+      <ion-label>Art</ion-label>
+      <ion-toggle [(ngModel)]="Art"></ion-toggle>
+    </ion-item>
+  </ion-col>
+  
+  <ion-col>
+    <ion-item>
+      <ion-label>Movies</ion-label>
+      <ion-toggle [(ngModel)]="Movies"></ion-toggle>
+    </ion-item>
+  </ion-col>
+</ion-row>
+
+
+    <!--Unchecks all-->
+    <ion-toggle checked [(ngModel)]="Movies"[(ngModel)]="Art" [(ngModel)]="Sports" [(ngModel)]="BookClub" [(ngModel)]="Cooking" [(ngModel)]="Bingo" [(ngModel)]="Fitness"
+    [(ngModel)]="Theatre" [(ngModel)]="Knitting" [(ngModel)]="LiveMusic" [(ngModel)]="Mass" [(ngModel)]="Yoga" >
+      Check all
+    </ion-toggle>
+
+  </ion-grid>
+
+  </ion-list>
+
+  <ion-button (click)="submitInterests()">Submit</ion-button>
+
+</ion-content>
